@@ -1,3 +1,4 @@
+// src/components/Home.js
 import React from "react";
 
 function Home() {
@@ -8,7 +9,8 @@ function Home() {
         Hi, I'm Jewoo Song, a passionate developer with expertise in [Your
         Technologies].
       </p>
-      <section className="introduction">
+
+      <div className="introduction">
         <h2>About Me</h2>
         <p>
           I am a passionate developer with a keen interest in web development
@@ -16,13 +18,10 @@ function Home() {
           technologies including React, Node.js, and MongoDB. I love solving
           complex problems and building efficient, scalable solutions.
         </p>
-        <img
-          src="path_to_your_profile_image.jpg"
-          alt="Profile"
-          className="profile-image"
-        />
-      </section>
-      <section className="skills">
+        <img className="profile-image" src="profile.png" alt="Profile" />
+      </div>
+
+      <div className="skills">
         <h2>My Skills</h2>
         <ul>
           <li>JavaScript</li>
@@ -31,15 +30,23 @@ function Home() {
           <li>CSS</li>
           <li>HTML</li>
         </ul>
-      </section>
-      <section className="projects">
+      </div>
+
+      <div className="projects">
         <h2>Recent Projects</h2>
-        <ul>
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
-        </ul>
-      </section>
+        <div className="project-card">
+          <h3>Project 1</h3>
+          <p>Project 1 description...</p>
+        </div>
+        <div className="project-card">
+          <h3>Project 2</h3>
+          <p>Project 2 description...</p>
+        </div>
+        <div className="project-card">
+          <h3>Project 3</h3>
+          <p>Project 3 description...</p>
+        </div>
+      </div>
     </div>
   );
 }

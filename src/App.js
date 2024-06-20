@@ -6,11 +6,12 @@ import Contact from "./pages/Contact";
 import ProjectDetail from "./pages/ProjectDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import "./App.css"; // Ensure this import is correct and the file path is accurate
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <div className="App">
         <Navbar />
         <Routes>
